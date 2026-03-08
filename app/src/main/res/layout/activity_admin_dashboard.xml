@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".AdminDashboardActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvAdminPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Panel"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Post Notice Button -->
+    <Button
+        android:id="@+id/btnPostNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Notice"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Post Event Button -->
+    <Button
+        android:id="@+id/btnPostEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Event"
+        android:textSize="18sp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:padding="12dp"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smartcampusapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartCampusApp"
+        tools:targetApi="34">
+
+        <!-- 🌟 Main entry point (App launcher) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 🧾 Notice Board screen -->
+        <activity android:name=".NoticeBoardActivity" />
+
+        <!-- 📅 Events screen -->
+        <activity android:name=".EventsActivity" />
+
+        <!-- 🧳 Lost & Found screen -->
+        <activity android:name=".LostFoundActivity" />
+
+        <!-- 🔐 Admin login -->
+        <activity android:name=".AdminLoginActivity" />
+
+        <!-- ✉️ Post Notice screen (Admin only) -->
+        <activity android:name=".PostNoticeActivity" />
+
+        <!-- 📆 Post Event screen (Admin only) -->
+        <activity android:name=".PostEventActivity" />
+
+        <!-- 🧍‍♂️ Post Lost & Found screen (Students) -->
+        <activity android:name=".PostLostFoundActivity" />
+
+        <activity android:name=".AdminDashboardActivity" />
+
+
+
+    </application>
+
+</manifest>
